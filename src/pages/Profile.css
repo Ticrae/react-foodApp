@@ -1,0 +1,11 @@
+.singlefood{
+    width: 760px;
+    height: 1000px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 52px;
+    padding-left: 62px;
+    padding-right: 81px;
+}

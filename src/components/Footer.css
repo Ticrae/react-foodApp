@@ -1,0 +1,133 @@
+.footer{
+    height: 100%;
+    background: #0B0D17;
+    color: #fff;
+    padding: 64px 0px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 165px;
+}
+
+.footer-list h4{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.footer-list ul{
+    margin-top: 24px;
+}
+
+.footer-list ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer-list img{
+    margin-top: 24px;
+}
+
+.footer-end{
+    border-top: 1px solid rgba(255, 255, 255, 0.128);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 28px 165px;
+}
+
+.footer-end h3{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.socials img{
+    margin-left: 24px;
+    padding: 8px;
+    background: rgba(128, 128, 128, 0.169);
+    border-radius: 50%;
+}
+
+@media(max-width: 950px){
+    .footer-container{
+        padding: 0px 87px;
+    }
+}
+
+@media(max-width: 768px){
+    .footer-container{
+        padding: 0px 70px;
+    }
+}
+@media(max-width: 550px){
+    .footer-container{
+        padding: 0px 20px;
+    }
+    .footer-list{
+        margin: 10px;
+    }
+    .footer-list h4{
+        font-size: 16px;
+    }
+    .footer-list ul li{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .footer-list img{
+        width: 150px;
+    }
+    .footer-end{
+        height: 60px;
+        padding: 20px 30px;
+        align-items: center;
+    }
+    .footer-end h3{
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width: 414px){
+    .footer{
+        max-height: 550px;
+    }
+    .footer-container{
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-end{
+        height: 40px;
+        padding: 30px 10px;
+    }
+    .footer-end h3{
+        font-size: 10px;
+    }
+    
+}
+
+@media(max-width: 280px){
+    .footer-list ul li{
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+    .footer-container{
+        padding: 0px 8px;
+        display: grid;
+        grid-template-columns: 2fr 0.5fr;
+    }
+    .footer-end{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .socials img{
+        margin-left: 5px;
+    }
+}

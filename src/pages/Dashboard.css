@@ -1,0 +1,279 @@
+.dashboard{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 320px;
+    /* border: 1px solid #000; */
+    background: #FBFBFB;
+    padding-top: 113px;
+    padding-left: 26px;
+    padding-right: 27px;
+}
+
+.dash-title{
+    display: flex;
+    height: 67px;
+    align-items: center;
+    margin-bottom: 121px;
+}
+
+.dash-title img{
+    width: 58px;
+    height: 67px;
+    margin-right: 19px;
+    margin-left: 59px;
+}
+
+.dash-title h1{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color:#00302E;
+}
+
+.nav-card{
+    display: flex;
+    width: 267px;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.nav-card img{
+    color:#BCBCBC;
+    width: 20px;
+    height: 20px;
+    margin-right: 17px;
+    margin-left: 16.5px;
+}
+
+.hlinks{
+    text-decoration: none;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav-card.active{
+    background:#EFEFEF;
+    border-radius: 12px;
+}
+.nav-card.active img{
+    width: 21px;
+    height: 18px;
+    color: #000;
+    margin-right: 16.5px;
+    margin-left: 16.5px;
+}
+#active{
+    color: #000 !important;
+}
+
+.OrderBtn{
+    position: absolute;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    padding: 3px 7px;
+    top: 13px;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 500;
+}
+
+#green{
+    background: #06E775;
+    border-radius: 5px;
+}
+
+#orange{
+    background: #F3C294;
+    border-radius: 5px;    
+}
+
+.dash-container{
+    position: absolute;
+    left: 388px;
+    top: 0;
+    width: 900px;
+}
+
+.header-container{
+    margin-top: 139px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container h3{
+    color: #00302E;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.title-container p{
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.menu-data{
+    margin-top: 53px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food-list{
+    width: 240px;
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3px solid rgba(0, 48, 46, 0.14);
+    padding-top: 47px;
+    padding-left: 29px;
+    padding-right: 14px;
+    padding-bottom: 23px;
+    margin-right: 59px;
+    margin-bottom: 34px;
+    border-radius: 5px;
+}
+
+.food-list:hover{
+    box-shadow: 0 2px 6px rgba(0, 48, 46, 2);
+}
+
+#image img{
+    width: 90px;
+    height: 90px;
+}
+
+.titles{
+    text-decoration: none;
+    height: 33px;
+    font-size: 17px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #00302E;
+    margin-top: 13px;
+}
+
+.meal-text{
+    width: 172px;
+    height: 42px;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: 4px;
+}
+
+.menu-p{
+    display: flex;
+    height: 33px;
+    margin-top: 22px;
+    width: 197px;
+    justify-content: space-between;
+}
+
+.menu-p h4{
+    color: #00302E;
+    width: 68px;
+    font-size: 13px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.menu-p h5{
+    color: #06E775;
+    width: 73px;
+    font-size: 13px;
+    line-height: 33px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media(max-width: 950px){
+    .left-panel{
+        width: 400px;
+    }
+    .dash-title h1{
+        font-size: 55px;
+    }
+    .nav-card{
+        width: 350px;
+        padding: 40px 0px;
+    }
+    .nav-card img{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-card.active img{
+        width: 40px;
+        height: 40px;
+    }
+    .header-container{
+        width: 440px;
+        margin-bottom: 20px;
+    }
+    .dash-container{
+        width: 500px;
+        left: 450px;
+    }
+    .menu-data{
+        display: block;
+        margin: 0;
+    }
+    .food-list{
+        padding: 5%;
+        margin: 50px 0px;
+        width: 450px;
+        height: 550px;
+    }
+    #image img{
+        width: 250px;
+        height: 250px;
+    }
+    .titles{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .meal-text{
+        font-size: 20px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .menu-p{
+        width: 80%;
+        margin: auto;
+    }
+    .menu-p h4{
+        font-size: 23px;
+    }
+    .menu-p h5{
+        font-size: 23px;
+        width: 130px;
+    }
+    .hlinks{
+        font-size: 30px;
+    }
+    .OrderBtn{
+        top: 30px;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        padding: 8px 12px;
+    }
+}

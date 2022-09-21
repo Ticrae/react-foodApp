@@ -1,0 +1,39 @@
+import React from "react";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { Link, useNavigate } from "react-router-dom";
+import Background from "../components/Background";
+import "./Checkout.css";
+
+const Checkout = ({ count }) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Payment Made Successufully");
+    navigate("/orders");
+  };
+
+  return (
+    <div className="singlefood-container">
+      <div className="food">
+        <Background count={count} />
+      </div>
+      <div className="bg-color"></div>
+      <div className="checkout">
+        <Link to="/dashboard">
+          <AiOutlineArrowLeft className="go-back" />
+        </Link>
+        <form className="checkout-form" onSubmit={handleSubmit}>
+          <h3>Checkout</h3>
+          <input type="number" placeholder="Card Number" />
+          <input type="text" placeholder="Exp Date" />
+          <input type="text" placeholder="CVV/CVV2" />
+          <input type="number" placeholder="Card Pin" />
+          <button className="checkout-btn">MAKE PAYMENT</button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Checkout;
